@@ -1,0 +1,18 @@
+增加新页面流程 - add sourcetree to version control
+
+1. 在app.js里面增加route
+  .state('element', {
+          url: '/element',
+          templateUrl: 'element/index.html',
+          controller: "ElementCtrl"
+      })
+2. 新建文件夹，里面有index.html & controller.js两个文件
+
+3. 在index.html里面增加controller.js引用
+<script src="element/controller.js"></script>
+
+4. 在file/config.json中加入新结点
+    {
+        "name": "Goto Timeout",
+        "url": "#/timeout"
+    }
