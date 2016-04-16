@@ -360,7 +360,11 @@
       <created>1460789767870</created>
       <updated>1460789767870</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="15:00 04/16/2016 from webstorm">
+      <created>1460790033780</created>
+      <updated>1460790033780</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -409,7 +413,8 @@
     <MESSAGE value="14:22 04/16/2016 from webstorm" />
     <MESSAGE value="14:41 04/16/2016 from webstorm" />
     <MESSAGE value="14:55 04/16/2016 from webstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="14:55 04/16/2016 from webstorm" />
+    <MESSAGE value="15:00 04/16/2016 from webstorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="15:00 04/16/2016 from webstorm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
