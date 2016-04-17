@@ -1,7 +1,14 @@
-Thi file documents what I studied everyday.
-04-16-2016
-Webstorm github sourcetree
+﻿Thi file documents what I studied everyday.
+04/17/2016 - customize filter
+angular.module("myApp.filters",[])
+.filter('custom', function($timeout){
+  return function(input){
+            if(input){
+                return "●";
+            }
+}
 
+04-16-2016 Webstorm github sourcetree
 14:19 add from github
 14:32 from notepad++
 14:35 from github
