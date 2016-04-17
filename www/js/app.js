@@ -115,6 +115,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
                 url: '/timeout',
                 templateUrl: 'practice/ionic/timeout/index.html',
                 controller: "TimeoutCtrl"
+            })
+            .state('filter', {
+                url: '/filter',
+                templateUrl: 'practice/ionic/filter/index.html',
+                controller: "FilterCtrl"
             });
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/tab/dash');

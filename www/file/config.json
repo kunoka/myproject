@@ -14,5 +14,9 @@
     {
         "name": "Goto Timeout",
         "url": "#/timeout"
+    },
+    {
+        "name": "Goto Filter",
+        "url": "#/filter"
     }
 ]

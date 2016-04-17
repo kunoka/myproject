@@ -1,8 +1,6 @@
 /**
  * Created by A on 2016/4/9.
  */
-
-
 app.controller("ElementCtrl", function($scope){
     console.log("elementCtrl");
     $scope.goBack = function(){
