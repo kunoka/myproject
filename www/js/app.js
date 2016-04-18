@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','starter.homeService','ngMessages','myApp.filters'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','starter.homeService','ngMessages','myApp.filters', 'filter.factory'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -84,6 +84,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','s
                     'tab-chats': {
                         templateUrl: 'templates/chat-detail.html',
                         controller: 'ChatDetailCtrl'
+                    }
+                }
+            })
+            .state('tab.chart', {
+                url: '/chart',
+                views: {
+                    'tab-chart': {
+                        templateUrl: 'templates/tab-chart.html',
+                        controller: 'ChartCtrl'
                     }
                 }
             })

@@ -1,7 +1,7 @@
 /**
  * Created by A on 2016/4/9.
  */
-app.controller("ElementCtrl", function($scope){
+app.controller("ElementCtrl", function($scope, myFactory){
     console.log("elementCtrl");
     $scope.goBack = function(){
         history.back();
@@ -46,6 +46,16 @@ app.controller("ElementCtrl", function($scope){
     $scope.my =  $scope.animals;
     $scope.onChange = function(){
         console.log( $scope.my.id);
-    }
+    };
+    $scope.setValue = function(){
+        myFactory.set("Harry Potter2222");
+
+    };
+    $scope.getValue = function(){
+        $scope.value = myFactory.get();
+    };
+    $scope.clearValue = function(){
+        $scope.value = myFactory.clear();
+    };
     //console.log($scope.a.selectValue);
 });
