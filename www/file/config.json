@@ -18,5 +18,9 @@
     {
         "name": "Goto Filter",
         "url": "#/filter"
+    },
+    {
+        "name": "Goto Chrome",
+        "url": "#/chrome"
     }
 ]
