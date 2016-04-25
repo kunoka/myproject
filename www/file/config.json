@@ -22,5 +22,9 @@
     {
         "name": "Goto Chrome",
         "url": "#/chrome"
+    },
+    {
+        "name": "Goto Event",
+        "url": "#/event"
     }
 ]

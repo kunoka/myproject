@@ -16,3 +16,16 @@
         "name": "Goto Timeout",
         "url": "#/timeout"
     }
+
+5. 在页面加上后退导航按钮。
+ <ion-nav-buttons side="right">
+      <button class="button back-button buttons  button-clear header-item" ng-click="goBack()">
+          <i class="icon ion-ios-arrow-back"></i> Back
+      </button>
+  </ion-nav-buttons>
+6. 在对应的controller中DI myFactory service.
+app.controller("ElementCtrl", function($scope, myFactory){
+    console.log("elementCtrl");
+    $scope.goBack = function(){
+        history.back();
+    };

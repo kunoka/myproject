@@ -12,3 +12,29 @@
     text-align: center;
     vertical-align: middle;
 }
+
+.bg-red {
+  background-color: red;
+}
+.bg-yellow {
+  background-color: yellow;
+}
+
+.lg-1 {
+  border:0px;
+  width: auto;
+}
+
+
+.fs1{
+  margin: 5px 5px 0px 10px;
+  background-color: rgba(217,217,217,0.5);
+}
+
+div{
+  margin-bottom: 10px;
+}
+
+.width-90 {
+  width: 90%;
+}

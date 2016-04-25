@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers','starter.services','my.new.module', 'starter.factories','starter.homeService','ngMessages','myApp.filters', 'filter.factory'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','starter.homeService','ngMessages','myApp.filters', 'filter.factory'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -24,7 +24,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','my
 })
 
 .config(function($stateProvider, $urlRouterProvider, $ionicConfigProvider) {
-        ///*
+        /*
          $ionicConfigProvider.platform.ios.tabs.style('standard');
          $ionicConfigProvider.platform.ios.tabs.position('bottom');
          $ionicConfigProvider.platform.android.tabs.style('standard');
@@ -38,7 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','my
 
          $ionicConfigProvider.platform.ios.views.transition('ios');
          $ionicConfigProvider.platform.android.views.transition('android');
-        // */
+         */
         // Ionic uses AngularUI Router which uses the concept of states
         // Learn more here: https://github.com/angular-ui/ui-router
         // Set up the various states which the app can be in.
@@ -129,11 +129,6 @@ angular.module('starter', ['ionic', 'starter.controllers','starter.services','my
                 url: '/filter',
                 templateUrl: 'practice/ionic/filter/index.html',
                 controller: "FilterCtrl"
-            })
-            .state('chrome', {
-                url: '/chrome',
-                templateUrl: 'practice/ionic/chrome_developer_tools/index.html',
-                controller: "ChromeCtrl"
             });
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/tab/dash');
