@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','starter.homeService','ngMessages','myApp.filters', 'filter.factory'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','starter.services','starter.homeService','my.new.module','ngMessages','myApp.filters', 'filter.factory'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -129,6 +129,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','
                 url: '/filter',
                 templateUrl: 'practice/ionic/filter/index.html',
                 controller: "FilterCtrl"
+            })
+            .state('chrome', {
+                url: '/chrome',
+                templateUrl: 'practice/ionic/chrome_developer_tools/index.html',
+                controller: "ChromeCtrl"
+            })
+            .state('event', {
+                url: '/event',
+                templateUrl: 'practice/ionic/event/index.html',
+                controller: "EventCtrl"
             });
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/tab/dash');

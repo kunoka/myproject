@@ -1,10 +1,50 @@
-<ion-view view-title="filter">
-  <ion-nav-buttons side="left">
-    <button class="button back-button buttons  button-clear header-item" ng-click="doSomething()">
-      <i class="icon ion-ios-arrow-back"></i> Back
-    </button>
-  </ion-nav-buttons>
-  <ion-content>
+<ion-view view-title="Filter" class="bar-calm">
+    <ion-nav-buttons side="right">
+        <button class="button back-button buttons  button-clear header-item" ng-click="doSomething()">
+            <i class="icon ion-ios-arrow-back"></i> Back
+        </button>
+    </ion-nav-buttons>
+    <ion-content class="assertive-bg">
+        <div class="row">
+             <div class="col col-20">
+                <button class="button" type="text" ng-click="onTapping(9)">9</button>
+            </div>
+            <div class="col col-40 v_middle">
+               <button class="button button-clear">Value: {{test}}</button>
+            </div>
+            <div class="col col-20">
+                <div class="passcode-input">
+                    {{test | custom}}
+                </div>
+            </div>
+            <div class="col col-20">
+                <button class="button button-clear button-calm" ng-click="clear()">Clear</button>
+            </div>
+        </div>
+        <div class="row">
+           <div class="col">两个Controller之间传递数据</div>
+        </div>
+        <div class="row">
+            <div class="col col-33">
+                <button class="button" ng-click="getValue()">Get Value</button>
+            </div>
+            <div class="col col-33">
+                {{value}}
+            </div>
+            <div class="col col-33">
+                <input type="text" ng-model="value"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-33">
+                <button class="button" ng-click="setValue()">Set Value</button>
+            </div>
 
+        </div>
+        <div class="row">
+            <div class="col col-33">
+                <button class="button" ng-click="clearValue()">Clear Value</button>
+            </div>
+        </div>
   </ion-content>
 </ion-view>
