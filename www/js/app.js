@@ -139,6 +139,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.factories','
                 url: '/event',
                 templateUrl: 'practice/ionic/event/index.html',
                 controller: "EventCtrl"
+            })
+            .state('directive', {
+                url: '/directive',
+                templateUrl: 'practice/ionic/directive/index.html',
+                controller: "DirectiveCtrl"
             });
         // if none of the above states are matched, use this as the fallback
         $urlRouterProvider.otherwise('/tab/dash');

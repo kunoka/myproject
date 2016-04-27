@@ -26,5 +26,9 @@
     {
         "name": "Goto Event",
         "url": "#/event"
+    },
+    {
+        "name": "Goto Directive",
+        "url": "#/directive"
     }
 ]

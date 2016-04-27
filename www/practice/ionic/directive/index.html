@@ -1,0 +1,28 @@
+<ion-view view-title="Directive">
+  <ion-nav-buttons side="right">
+    <button class="button back-button buttons  button-clear header-item" ng-click="goBack()">
+      <i class="icon ion-ios-arrow-back"></i> Back
+    </button>
+  </ion-nav-buttons>
+  <ion-content>
+    <fieldset class="fs1">
+      <legend class="lg1">
+        AngularJS内幕详解之 Directive
+      </legend>
+
+    <div piece-of-food="pieces[0]"></div>
+    <div piece-of-food="pieces[1]"></div>
+    <div>
+      <p note="Note - You just bought some {{type}}"></p>
+    </div>
+    <div>
+      <p note='"Note2 - You just bought some " + type'></p>
+    </div>
+      <div>
+        这是双向绑定 <br/>
+        <button countable="clicks"></button>
+        <span>Got {{clicks}} clicks!</span>
+      </div>
+    </fieldset>
+  </ion-content>
+</ion-view>

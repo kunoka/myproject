@@ -5,7 +5,7 @@
 app.controller('DashCtrl', function($scope,getAll) {
     getAll.all().then(function success(resp){
         console.log(resp);
-        $scope.items = resp;
+        $scope.items = resp.reverse();
     },function error(error){
         alert(error);
     })

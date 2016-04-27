@@ -101,6 +101,7 @@ app.directive("ngFocus", function(){
         element.removeClass("bg-red");
         element.addClass("bg-yellow");
         scope.input1 = "You left me.";
+        scope.$apply();
       })
     }
   }
